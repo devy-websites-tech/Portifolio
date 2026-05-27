@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Devy Websites & Tech - Transformando ideias em experiências digitais. Desenvolvimento web, design e marketing digital.">
+  <meta name="author" content="Dante e Arthur">
+
+  <meta property="og:title" content="Devy Websites & Tech">
+  <meta property="og:description" content="Transformando ideias em experiências digitais. Desenvolvimento web, design e marketing digital.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://devywebsites.tech">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2306080f'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='%237c5cfc' font-family='monospace'%3E%3C!%5BCDATA[%3E%5D%5D%3E%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Devy Websites & Tech | Desenvolvimento Web, Design e Marketing</title>
+</head>
+<body>
+
+  <div id="loader" class="loader">
+    <div class="loader-spinner">
+      <div class="loader-orbit">
+        <div class="loader-center"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-planet"></div>
+        <div class="loader-planet p2"></div>
+        <div class="loader-planet p3"></div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="canvas-bg" class="canvas-bg"></canvas>
+
+  <div id="mouse-glow" class="mouse-glow"></div>
+
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#hero">
+          <span class="logo-text">Devy Websites & Tech</span>
+          <span class="logo-sub">por Dante e Arthur</span>
+        </a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title glitch" data-text="Devy Websites & Tech">Devy Websites & Tech</h1>
+      <p class="hero-by">por Dante e Arthur</p>
+      <p class="hero-subtitle" id="typing-text"></p>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="section-container">
+      <h2 class="section-title reveal">Sobre Nós</h2>
+      <div class="sobre-grid">
+        <div class="sobre-avatar reveal">
+          <div class="avatar-border">
+            <div class="avatar-placeholder">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-text reveal">
+          <p>
+            Somos a <strong>Devy Websites & Tech</strong>, uma equipe apaixonada por transformar ideias em experiências digitais memoráveis. 
+            Nascidos da parceria entre <strong>Dante e Arthur</strong>, unimos criatividade e técnica para entregar projetos que 
+            realmente fazem a diferença.
+          </p>
+          <p>
+            Nosso trabalho abrange desde o desenvolvimento de sites institucionais e sistemas web até design de interfaces 
+            e estratégias de marketing digital. Cada projeto é tratado com a dedicação de quem busca não apenas entregar 
+            código, mas construir presença digital.
+          </p>
+          <p>
+            Acreditamos que tecnologia bem aplicada transforma negócios. Por isso, combinamos as melhores ferramentas 
+            e práticas modernas para criar soluções que unem performance, estética e usabilidade.
+          </p>
+        </div>
+      </div>
+      <div class="sobre-techs reveal">
+        <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+        <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+        <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+        <span class="tech-badge"><i class="fas fa-flask"></i> C++</span>
+        <span class="tech-badge"><i class="fas fa-code"></i> C#</span>
+        <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+        <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+        <span class="tech-badge"><i class="fas fa-paint-brush"></i> GIMP</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades" class="habilidades">
+    <div class="section-container">
+      <h2 class="section-title reveal">Nossas Habilidades</h2>
+      <p class="section-sub reveal">Cada projeto é uma jornada pelo cosmos digital</p>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-card-inner" style="--card-gradient: linear-gradient(135deg, #7c5cfc, #5b2abf);">
+            <div class="skill-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Design</h3>
+            <ul>
+              <li>Criação de identidade visual</li>
+              <li>UI/UX Design moderno</li>
+              <li>Edição e manipulação com GIMP</li>
+              <li>Prototipagem de interfaces</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-card-inner" style="--card-gradient: linear-gradient(135deg, #00d4ff, #0066cc);">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Programação</h3>
+            <ul>
+              <li>HTML5, CSS3, JavaScript puro</li>
+              <li>React e Node.js</li>
+              <li>Python, C++, C#</li>
+              <li>Desenvolvimento Full-Stack</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-card-inner" style="--card-gradient: linear-gradient(135deg, #ff6b6b, #cc3333);">
+            <div class="skill-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Marketing</h3>
+            <ul>
+              <li>Otimização SEO</li>
+              <li>Gestão de Mídias Sociais</li>
+              <li>Branding digital estratégico</li>
+              <li>Análise de métricas e resultados</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <div class="section-container">
+      <h2 class="section-title reveal">Projetos</h2>
+      <div class="projetos-placeholder reveal">
+        <div class="placeholder-glow"></div>
+        <p class="placeholder-text">Em breve<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+        <p class="placeholder-sub">Projetos em desenvolvimento</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-divider"></div>
+      <div class="footer-social">
+        <a href="https://github.com/devy-websites-tech" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Devy Websites & Tech. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
